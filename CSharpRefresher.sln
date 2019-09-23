@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentTrackerOOP", "Studen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyOOP", "SurveyOOP\SurveyOOP.csproj", "{44A6A0C4-D191-4B94-B9C7-8F7604996566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentTrackerERRhandling", "StudentTrackerOOPwithERR\StudentTrackerERRhandling.csproj", "{8D23CE09-20D3-4D24-9869-642348145A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentTrackingEnums", "StudentTrackingEnums\StudentTrackingEnums.csproj", "{AE4E09A5-1488-47C8-BAB7-48437C80BBB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D23CE09-20D3-4D24-9869-642348145A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D23CE09-20D3-4D24-9869-642348145A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D23CE09-20D3-4D24-9869-642348145A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D23CE09-20D3-4D24-9869-642348145A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4E09A5-1488-47C8-BAB7-48437C80BBB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4E09A5-1488-47C8-BAB7-48437C80BBB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4E09A5-1488-47C8-BAB7-48437C80BBB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4E09A5-1488-47C8-BAB7-48437C80BBB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
