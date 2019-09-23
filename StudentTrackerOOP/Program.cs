@@ -33,6 +33,8 @@ namespace StudentTracker
                 newStudent.Phone = int.Parse(Console.ReadLine());
 
                 students.Add(newStudent);
+                Student.Count++;
+                Console.WriteLine("Total Students: {0}", Student.Count);
 
                 Console.WriteLine("Add another?");
 
@@ -46,7 +48,13 @@ namespace StudentTracker
             foreach (var student in students)
             {
                 Console.WriteLine(
-                    "Name: {0} \nGrade: {1} \nBirthday: {2} \nAddress: {3} \nPhone: {4}", student.Name, student.Grade.ToString(), student.Birthday, student.Address, student.Phone.ToString());
+                    "Name: {0} \nGrade: {1} \nBirthday: {2} \nAddress: {3} \nPhone: {4}",
+                    student.Name,
+                    student.Grade.ToString(),
+                    student.Birthday,
+                    student.Address
+                    );
+                  //  student.Phone();
             }
           
             Console.ReadLine();
@@ -54,13 +62,20 @@ namespace StudentTracker
         }
 
         class Student{
+
+            static public int Count;
+
             public string Name;
             public int Grade;
             public string Birthday;
             public string Address;
-            public int Phone;
-            
+            private int phone;
 
+            public int Phone
+            {
+                set { phone = value; }
+            }
+            
         }
 }
 }
