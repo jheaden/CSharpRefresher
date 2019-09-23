@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingLoop", "CountingLoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passcode", "Passcode\Passcode.csproj", "{3395AA8F-4791-452E-A602-0CE082357B34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentTrackerOOP", "StudentTrackerOOP\StudentTrackerOOP.csproj", "{613478E2-A0C9-4FFE-A6D2-04FB8AEE14B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentTrackerOOP", "StudentTrackerOOP\StudentTrackerOOP.csproj", "{613478E2-A0C9-4FFE-A6D2-04FB8AEE14B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurveyOOP", "SurveyOOP\SurveyOOP.csproj", "{44A6A0C4-D191-4B94-B9C7-8F7604996566}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{613478E2-A0C9-4FFE-A6D2-04FB8AEE14B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{613478E2-A0C9-4FFE-A6D2-04FB8AEE14B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{613478E2-A0C9-4FFE-A6D2-04FB8AEE14B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A6A0C4-D191-4B94-B9C7-8F7604996566}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
