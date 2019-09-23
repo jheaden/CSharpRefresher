@@ -10,6 +10,7 @@ namespace StudentTracker
     {
         static void Main(string[] args)
         {
+            Import();
             var students = new List<Student>();
             var adding = true;
 
@@ -17,20 +18,11 @@ namespace StudentTracker
             {
                 var newStudent = new Student();
 
-                Console.WriteLine("Enter a student name: ");
-                newStudent.Name = Console.ReadLine();
-
-                Console.WriteLine("Grade: ");
-                newStudent.Grade = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("Birthday: ");
-                newStudent.Birthday = Console.ReadLine();
-
-                Console.WriteLine("Address: ");
-                newStudent.Address = Console.ReadLine();
-
-                Console.WriteLine("Phone: ");
-                newStudent.Phone = int.Parse(Console.ReadLine());
+                newStudent.Name = Util.Console.Ask("Enter a student name: ");
+                newStudent.Grade = int.Parse(Util.Console.Ask("Grade: ")); 
+                newStudent.Birthday = Util.Console.Ask("Birthday: ");
+                newStudent.Address = Util.Console.Ask("Address: ");            
+                newStudent.Phone = int.Parse(Util.Console.Ask("Phone: "));
 
                 students.Add(newStudent);
                 Student.Count++;
@@ -48,7 +40,8 @@ namespace StudentTracker
             foreach (var student in students)
             {
                 Console.WriteLine(
-                    "Name: {0} \nGrade: {1} \nBirthday: {2} \nAddress: {3} \nPhone: {4}",
+                    "Name: {0} \nGrade: {1} \nBirthday: {2} \nAddress: {3}",
+                    //\nPhone: {4}",
                     student.Name,
                     student.Grade.ToString(),
                     student.Birthday,
@@ -56,12 +49,23 @@ namespace StudentTracker
                     );
                   //  student.Phone();
             }
-          
             Console.ReadLine();
-
         }
 
-        class Student{
+        static void Import()
+        {
+            var importedStudent = new Student("Jenny", 73, "Oct 8", "123 Fake Street", 5);
+            Console.WriteLine(importedStudent.Name);
+        }
+
+        class Member
+        {
+            public string Name;
+            public string Address;
+            protected int phone;
+        }
+        class Student : Member
+        {
 
             static public int Count;
 
@@ -75,7 +79,25 @@ namespace StudentTracker
             {
                 set { phone = value; }
             }
-            
+
+            public Student()
+            {
+
+            }
+
+            public Student(string name, int grade, string birthday, string address, int phone)
+            {
+                Name = name;
+                Grade = grade;
+                Birthday = birthday;
+                Address = address;
+                Phone = phone;
+            }            
+        }
+
+        class Teacher : Member
+        {
+            public string Subject;
         }
 }
 }
